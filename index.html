@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+    <style>
+        body{
+            background-color:azure;
+        }
+        header{
+            padding:20px;
+            text-align: center;
+            background-color: navy;
+            color: white;
+            font-family:'Times New Roman', Times, serif;
+        }
+        .btn-click{
+            background-color:green;
+            color:white;
+        }
+        .btn-click:hover{
+            background-color:slategray;
+            color:black;
+        }
+        .btn-link:hover{
+            background-color:green;
+            color:white;
+        }
+        .section-box {
+  background-color: navy;
+  border-radius: 20px;
+  color: white;
+  padding: 20px;
+}
+
+        footer{
+            text-align: center;
+            margin-top:30px ;
+            background-color: navy;
+            padding:20px;
+        }
+        .contactdet{
+            font-family: 'Times New Roman', Times, serif ;
+        }
+        .card img {
+            height: 150px;
+            object-fit:contain;
+        }
+        html{
+            scroll-behavior: smooth;
+        }
+        body, h1, h3, h4 {
+    font-family: 'Poppins', sans-serif;
+}
+    @media (max-width: 576px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+  header p {
+    font-size: 1rem;
+  }
+  .card h4 {
+    font-size: 1.1rem;
+  }
+  footer h1 {
+    font-size: 1.5rem;
+  }
+  footer h3{
+    font-size: 1.5rem;
+  }
+}
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+  transition: 0.3s ease-in-out;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="fw-bold">Hello, I'm Keerthi!</h1>
+        <p>Aspiring Front-end Developer</p>
+        <a class="btn btn-click btn-sm border border-secondary rounded"  href="#projects">See My Works</a>
+    </header>
+    <main class="container-fluid">
+        <section class="section-box my-3" id="about">
+            <h3 class=" fw-semibold fs-5 text-start section-title">About</h3>
+            <p class="lead">
+  I'm a beginner web developer learning HTML, CSS, and Bootstrap. I love building beautiful things with code.
+  Right now, I'm focusing on building strong foundations in front-end development, and I've already started crafting projects that reflect my love for design and simplicity.
+  Every day is a step forward — learning, building, and growing!
+</p>
+        </section>
+        <section class="section-box mb-3" id="Skills">
+            <h3 class="text-start section-title">Skills</h3>
+            <div class="row text-center m-3">
+               <div class="col-md-4 lead"><i class="bi bi-code-slash"></i> HTML</div>
+            <div class="col-md-4 lead"><i class="bi bi-code-slash"></i> CSS</div>
+            <div class="col-md-4 lead"><i class="bi bi-code-slash"></i> Bootstrap</div>
+            </div>
+        </section>
+        <section class="section-box" id="projects">
+            <h3 class="text-start section-title pb-4">My Projects</h3>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3 p-2 m-2">
+                
+                    <div class="card p-2 mb-4 shadow-lg ">
+                        <h4 class="fw-medium lead"><i class="bi bi-browser-edge"></i>reestar</h4>
+                        <img src="images/foodie.png" alt="GoPurple" class=" img-fluid p-3 pb-5">
+                        <h6 class="ps-1">Website For Food Orders!</h6>
+                        <p class="em">A site for ordering your Favourite food.People can find  easy and quick way for food delivery.(css project)</p>
+                       <a href="css pro2/indexc2.html" target="_blank"> <button  class="btn  btn-link btn-primary m-3 me-4 ms-3">Website Link</button></a>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 p-2 m-2">
+                        
+                    <div class="card p-2 mb-4 shadow-lg ">
+                        <h4 class="fw-medium lead"><i class="bi bi-browser-edge"></i> GoPurple</h4>
+                        <img src="images/GoPplicon.png" alt="GoPurple" class=" img-fluid p-3 pb-5">
+                        <h6 class="ps-1 ">Website For Purple Souls!</h6>
+                        <p class="em">A fun and creative site for all things Purple.
+                            Made for Pure Purple Soul.Go and Enjoy Purple!</p>
+                       <a href="#" target="_blank"> <button class="btn btn-link btn-primary m-3 me-4 ms-3 " >Website Link</button></a>
+                    </div>
+                
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 p-2 m-2 ">
+                                                  
+                    <div class="card p-2 mb-4 shadow-lg ">
+                        <h4 class="fw-medium lead"><i class="bi bi-browser-edge"></i>FSD</h4>
+                        <img src="images/fsd.png" alt="Full Stack development" class=" img-fluid p-3 pb-5">
+                        <h6 class="ps-1 fw-medium">Website About Full Stack development!</h6>
+                        <p class="em">A site contanining video description about Full Stack development.(html project)</p>
+                       <a href="html pro1/firstpg.html" target="_blank"> <button class="btn btn-link btn-primary m-3 me-4 ms-3">Website Link</button></a>
+                    </div>
+                    
+                </div>
+            </div>
+ </section>
+    </main>
+    <footer class=" container-fluid text-center">
+        <h1 class="fw-bold text-light" class="contactdet">Contact Me</h1>
+        <div class="text-center text-light">Email : keerthigaya3428@gmail.com</div>
+        <div class="text-center text-light ">Phone no : 780690***</div>
+        <section class="container my-3">
+            <h3 class="text-light">Send Me a Message...</h3>
+            <form class="form-floating">
+                <div class="mb-2">
+                    <label for="name" class="form-label text-light" >Name :</label>
+                    <span><input type="name" class="form-control " id="name" placeholder="Your Name"></span>
+                </div>
+                                <div class="mb-2">
+                    <label for="email" class="form-label text-light" >Email :</label>
+                    <input type="email" class="form-control " id="email" placeholder="Your e-mail">
+
+                </div>
+                                <div class=" mb-2">
+                    <label for="Message" class="form-label text-light" >Message :</label>
+                    <textarea type="Message" class="form-control " id="message" rows="10" placeholder="Your message here..."></textarea>
+                </div>
+                <button class="btn btn-success submit">Submit</button>
+
+            </form>
+
+        </section>
+    </footer>
+   
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+</html>
